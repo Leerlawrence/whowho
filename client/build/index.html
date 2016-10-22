@@ -21,19 +21,8 @@ var randomPerson = Math.floor((Math.random() * 17) + 1);
 function reveal() {
     var i = randomPerson //Math.floor((Math.random() * 17) + 1);
     var numInList= i+1;
-    var chosenVal =document.getElementById("ddl").value;
-    var chosenOpt =document.getElementById("ddl2").value;
-   alert(chosenVal + "-" +chosenOpt);
-    
     alert("No: "+ numInList + "\nName: "+ person[i] + "\nHair: "+ hairColour[i]+ "\nFacial Hair: "+ facialHair[i]+ "\nGlasses: "+ glasses[i]+ "\nTie: "+ tie[i]+ "\nGender: "+ gender[i]);
 };
-
-// function checkIt() {
-//     var i = randomPerson //Math.floor((Math.random() * 17) + 1);
-//     var numInList= i+1;
-//     alert(dvar elem = document.getElementById("ddl");
-//     alert("No: "+ numInList + "\nName: "+ person[i] + "\nHair: "+ hairColour[i]+ "\nFacial Hair: "+ facialHair[i]+ "\nGlasses: "+ glasses[i]+ "\nTie: "+ tie[i]+ "\nGender: "+ gender[i]);
-// };
 
 // function myFunction() {
     // alert(person[randomPerson])
@@ -58,36 +47,36 @@ function reveal() {
 // </select>
 
 
-// function configureDropDownLists(ddl1,ddl2) {
-//     var colours = ['Black', 'White', 'Blue'];
-//     var shapes = ['Square', 'Circle', 'Triangle'];
-//     var names = ['John', 'David', 'Sarah'];
+function configureDropDownLists(ddl1,ddl2) {
+    var colours = ['Black', 'White', 'Blue'];
+    var shapes = ['Square', 'Circle', 'Triangle'];
+    var names = ['John', 'David', 'Sarah'];
 
-//     switch (ddl1.value) {
-//         case 'Colours':
-//             ddl2.options.length = 0;
-//             for (i = 0; i < colours.length; i++) {
-//                 createOption(ddl2, colours[i], colours[i]);
-//             }
-//             break;
-//         case 'Shapes':
-//             ddl2.options.length = 0; 
-//         for (i = 0; i < shapes.length; i++) {
-//             createOption(ddl2, shapes[i], shapes[i]);
-//             }
-//             break;
-//         case 'Names':
-//             ddl2.options.length = 0;
-//             for (i = 0; i < names.length; i++) {
-//                 createOption(ddl2, names[i], names[i]);
-//             }
-//             break;
-//             default:
-//                 ddl2.options.length = 0;
-//             break;
-//     }
+    switch (ddl1.value) {
+        case 'Colours':
+            ddl2.options.length = 0;
+            for (i = 0; i < colours.length; i++) {
+                createOption(ddl2, colours[i], colours[i]);
+            }
+            break;
+        case 'Shapes':
+            ddl2.options.length = 0; 
+        for (i = 0; i < shapes.length; i++) {
+            createOption(ddl2, shapes[i], shapes[i]);
+            }
+            break;
+        case 'Names':
+            ddl2.options.length = 0;
+            for (i = 0; i < names.length; i++) {
+                createOption(ddl2, names[i], names[i]);
+            }
+            break;
+            default:
+                ddl2.options.length = 0;
+            break;
+    }
 
-// }
+}
 
 
 
@@ -278,7 +267,7 @@ function reveal() {
 <TABLE>
 <TD width="15%">
 <P><P>
-<img  class="trapezoid" onclick="FadeInImage('kiyoimg','./public/images/back.jpg','backgrounddiv')" alt="" src="./public/images/kiyo.jpg" id="kiyoimg" width="175" height="280" ></div>
+<img  class="trapezoid" onclick="FadeInImage('kiyoimg','/back.jpg','backgrounddiv')" alt="" src="./public/images/kiyo.jpg" id="kiyoimg" width="175" height="280" ></div>
 <TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
 <img onclick="FadeInImage('leeimg','./public/images/back.jpg','backgrounddiv')" alt="" src="./public/images/lee.jpg" id="leeimg" width="175" height="280" >
 </TD>
