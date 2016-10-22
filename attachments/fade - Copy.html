@@ -1,0 +1,258 @@
+<Head>
+<BODY>
+
+
+
+<CENTER><TABLE WIDTH="100%"><TD  WIDTH="20%" VALIGN="TOP" Align="Left" ROWSPAN='4'> 
+
+
+<script type="text/javascript">
+     function configureDropDownLists(ddl1,ddl2) {
+    var colours = ['Black', 'White', 'Gray','Brown', 'Blonde', 'Bald'];
+    var shapes = ['Square', 'Circle', 'Triangle'];
+    var names = ['John', 'David', 'Sarah'];
+
+    switch (ddl1.value) {
+        case 'Colours':
+            ddl2.options.length = 0;
+            for (i = 0; i < colours.length; i++) {
+                createOption(ddl2, colours[i], colours[i]);
+            }
+            break;
+        case 'Shapes':
+            ddl2.options.length = 0; 
+        for (i = 0; i < shapes.length; i++) {
+            createOption(ddl2, shapes[i], shapes[i]);
+            }
+            break;
+        case 'Names':
+            ddl2.options.length = 0;
+            for (i = 0; i < names.length; i++) {
+                createOption(ddl2, names[i], names[i]);
+            }
+            break;
+            default:
+                ddl2.options.length = 0;
+            break;
+    }
+
+}
+
+    function createOption(ddl, text, value) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.text = text;
+        ddl.options.add(opt);
+    }
+</script>
+<h1><u>Who R U?</u></h1>
+
+Q1: 
+<select style="width: 150px;" id="ddl" onchange="configureDropDownLists(this,document.getElementById('ddl2'))">
+<option value=""></option>
+<option value="Colours">Hair Colour</option>
+<option value="Shapes">Shapes</option>
+<option value="Names">Names</option>
+</select>
+
+<select style="width: 100px;" id="ddl2">
+</select>
+<BR><BR>
+Q2: 
+<select style="width: 150px;" id="dd2" onchange="configureDropDownLists(this,document.getElementById('ddl3'))">
+<option value=""></option>
+<option value="Colours">Hair Colour</option>
+<option value="Shapes">Shapes</option>
+<option value="Names">Names</option>
+</select>
+
+<select style="width: 100px;" id="ddl3">
+</select>
+<BR><BR>
+Q3: 
+<select style="width: 150px;" id="dd4" onchange="configureDropDownLists(this,document.getElementById('ddl5'))">
+<option value=""></option>
+<option value="Colours">Hair Colour</option>
+<option value="Shapes">Shapes</option>
+<option value="Names">Names</option>
+</select>
+
+<select style="width: 100px;" id="ddl5">
+</select>
+<BR><BR>
+
+Q4: 
+<select style="width: 150px;" id="dd3" onchange="configureDropDownLists(this,document.getElementById('ddl4'))">
+<option value=""></option>
+<option value="Colours">Hair Colour</option>
+<option value="Shapes">Shapes</option>
+<option value="Names">Names</option>
+</select>
+
+<select style="width: 100px;" id="ddl4">
+</select>
+
+<FORM>
+<BR><BR>
+ <center><INPUT TYPE="button" onClick="history.go(0)" VALUE="New Game"></center>
+</FORM>
+
+
+<audio autoplay loop Controls style="width:10%;">
+      <source src="whoareyou.mp3">
+</audio></TD>
+<TD>
+<TABLE>
+<TD>
+<img onclick="FadeInImage('kiyoimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/kiyo.jpg" id="kiyoimg" width="150" height="240" ></div>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('leeimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/lee.jpg" id="leeimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('stuartimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/stuart.jpg" id="stuartimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('alanimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/alan.jpg" id="alanimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('simonimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/simon.jpg" id="simonimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('philimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/phil.jpg" id="philimg" width="150" height="240" >
+</TD>
+<TR>
+
+<TD>
+<img onclick="FadeInImage('davidmimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/davidm.jpg" id="davidmimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('gillianimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/gillian.jpg" id="gillianimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('katimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/kat.jpg" id="katimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('jameshimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/jamesh.jpg" id="jameshimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('davidimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/david.jpg" id="davidimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('jamesimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/james.jpg" id="jamesimg" width="150" height="240" >
+</TD>
+<TR>
+<TD>
+<img onclick="FadeInImage('michaelimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/michael.jpg" id="michaelimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('charleyimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/charley.jpg" id="charleyimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('johnimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/john.jpg" id="johnimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('sianimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/sian.jpg" id="sianimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('emmaimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/emma.jpg" id="emmaimg" width="150" height="240" >
+</TD>
+<TD>&nbsp&nbsp&nbsp<TD WIDTH="75">
+<img onclick="FadeInImage('hannahimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')" alt="" src="file:///C:/Users/Le/Desktop/whowho/hannah.jpg" id="hannahimg" width="150" height="240" >
+</TD>
+</TABLE>
+
+</TABLE>
+
+
+<script type="text/javascript">
+// Opacity and Fade in script.
+// Script copyright (C) 2008 http://www.cryer.co.uk/.
+// Script is free to use provided this copyright header is included.
+function SetOpacity(object,opacityPct)
+{
+  // IE.
+  object.style.filter = 'alpha(opacity=' + opacityPct + ')';
+  // Old mozilla and firefox
+  object.style.MozOpacity = opacityPct/100;
+  // Everything else.
+  object.style.opacity = opacityPct/100;
+}
+function ChangeOpacity(id,msDuration,msStart,fromO,toO)
+{
+  var element=document.getElementById(id);
+  var opacity = element.style.opacity * 100;
+  var msNow = (new Date()).getTime();
+  opacity = fromO + (toO - fromO) * (msNow - msStart) / msDuration;
+  if (opacity<0) 
+    SetOpacity(element,0)
+  else if (opacity>100)
+    SetOpacity(element,100)
+  else
+  {
+    SetOpacity(element,opacity);
+    element.timer = window.setTimeout("ChangeOpacity('" + id + "'," + msDuration + "," + msStart + "," + fromO + "," + toO + ")",1);
+  }
+}
+function FadeIn(id)
+{
+  var element=document.getElementById(id);
+  if (element.timer) window.clearTimeout(element.timer); 
+  var startMS = (new Date()).getTime();
+  element.timer = window.setTimeout("ChangeOpacity('" + id + "',1000," + startMS + ",0,100)",1);
+}
+function FadeOut(id)
+{
+  var element=document.getElementById(id);
+  if (element.timer) window.clearTimeout(element.timer); 
+  var startMS = (new Date()).getTime();
+  element.timer = window.setTimeout("ChangeOpacity('" + id + "',5000," + startMS + ",100,0)",1);
+}
+function FadeInImage(foregroundID,newImage,backgroundID)
+{
+  var foreground=document.getElementById(foregroundID);
+  if (backgroundID)
+  {
+    var background=document.getElementById(backgroundID);
+    if (background)
+    {
+      background.style.backgroundImage = 'url(' + foreground.src + ')';
+      background.style.backgroundRepeat = 'no-repeat';
+    }
+  }
+  SetOpacity(foreground,0);
+  foreground.src = newImage;
+  if (foreground.timer) window.clearTimeout(foreground.timer); 
+  var startMS = (new Date()).getTime();
+  foreground.timer = window.setTimeout("ChangeOpacity('" + foregroundID + "',5000," + startMS + ",0,100)",10);
+}
+
+
+</script>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+div:hover {
+    width: 300px;
+}</style>
+
+<a href="#self" onclick="FadeInImage('foregroundimg','file:///C:/Users/Le/Desktop/whowho/back.jpg','backgrounddiv')">
+image one</a>
+
+<select name="q1">
+    	<option value="" disabled="disabled">Question 1</option>
+    	<option value="eyes">Eyes</option>
+    	<option value="hair">Hair</option>
+    	<option value="Facial Hair">Dacial Hair</option>
+	<option value="Glasses">Eyes</option>
+    	<option value="top">Top</option>
+    	<option value="gender">Gender</option>
+</select> 
+
+</BODY>
+</head>

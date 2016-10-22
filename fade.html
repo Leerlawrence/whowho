@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>JavaScript Fade - Brugbart Example</title>
+    <style type="text/css">
+#Slideshow {
+  opacity: 1.0;              /* CSS3 */
+  -moz-opacity: 1.0;         /* Older versions of Firefox */
+  -khtml-opacity: 1.0;       /* Older versions of Safari */
+  filter: alpha(opacity=100); /* Internet Explorer */
+}
+    </style>
+  </head>
+
+  <body>
+ <div id="Basement" style="width:90%;margin:auto;">
+    <h1 onClick="fade(this)">Fade Example</h1>
+<img src="C:\Users\Le\Desktop\whowho\lee.jpg" onClick="fadeOut("lee")" id="lee"></img> 
+    <div style="width:100%;" id="Slideshow">
+  
+<div id="Basement" style="width:90%;margin:auto;">
+    <h1 onClick="fadeOut()">Fade Example</h1>
+<img src="C:\Users\Le\Desktop\whowho\kiyo.jpg" onClick="fadeOut()" id="kiyo"></img> 
+    <div style="width:100%;" id="Slideshow">
+   
+
+<div id="Basement" style="width:90%;margin:auto;">
+    <h1 onClick="fadeOut()">Fade Example</h1>
+<img src="C:\Users\Le\Desktop\whowho\alan.jpg" onClick="fadeOut()" id="alan"></img> 
+    <div style="width:100%;" id="Slideshow">
+
+
+   <script type="text/javascript">
+var element = document.getElementById("Slideshow");
+var duration = 3000; /* fade duration in millisecond */
+var hidtime = 2000; /* time to stay hidden */
+var showtime = 2000; /* time to stay visible */
+
+function SetOpa(Opa) {
+  element.style.opacity = Opa;
+  element.style.MozOpacity = Opa;
+  element.style.KhtmlOpacity = Opa;
+  element.style.filter = 'alpha(opacity=' + (Opa * 100) + ');';
+}
+
+function fadeOut() {
+  for (i = 0; i <= 1; i += 0.01) {
+    setTimeout("SetOpa(" + (1 - i) +")", i * duration);
+  }
+   //setTimeout("FadeIn()", (duration + hidtime));
+}
+function FadeIn() {
+  for (i = 0; i <= 1; i += 0.01) {
+    setTimeout("SetOpa(" + i +")", i * duration);
+  }
+   //setTimeout("fadeOut()", (duration + showtime));
+}
+
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+   </script>
+  </body>
+
+</html>
